@@ -1,0 +1,116 @@
+doctype html
+head 
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title 綠。文具坊
+    link(rel='stylesheet' href='public/css/style.css')
+body 
+    //頁首開始
+    header 
+        .row
+            //- a#btn-nav-toggle.icon-menu(href="#") menu
+            .logo-wrapper.container
+                a(href="index.html" )
+                    img(src="public/images/logo01.png", alt="綠。文具坊")
+            .container.icon-wrapper 
+                a(href="#")
+                    img(src="public/images/search.png", alt="搜尋")
+                a(href="#")
+                    img(src="public/images/user.png", alt="會員中心")
+                a(href="#")
+                    img(src="public/images/shopping-cart.png", alt="購物車")
+            nav 
+                ul.container 
+                    li 
+                        a(href="#") 關於我們
+                    li 
+                        a(href="#") 最新消息
+                    li 
+                        a(href="#") 產品類別
+                        ul.submenu 
+                            li 
+                                a(href="#") 紙製品
+                            li 
+                                a(href="#") 文具
+                            li 
+                                a(href="#") 雜貨
+                            li 
+                                a(href="#") 童玩
+                    li 
+                        a(href="#") 寫信空間
+    //頁首結尾
+    #banner
+        .container
+            img.img-fluid(src='public/images/banner01.png' alt='故事時光|2022 手帳展')
+
+    main
+        .container
+            section
+                .img-store
+                    a(href="#") 
+                        img(src="public/images/store.png", alt="")
+                    .img-mailbox
+                        a(href="#") 
+                            img(src="public/images/mailbox.png", alt="")
+                    .img-grandpa
+                        a(href="#") 
+                            img(src="public/images/grandpa.png", alt="")
+            
+        section
+            h2 故事時光
+            .story-wrapper
+                .story-bg
+                    img(src="public/images/storybg01.png", alt="")
+                    .story-text
+                        span.text-left To 每個人
+                        span.text-left 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
+                        span.text-right Hebe
+                .story-bg
+                    img(src="public/images/storybg02.png", alt="")
+                    .story-text
+                        span To 夏天出生的小盒
+                        span 陽光很盛，但總有適時的微風；夏夜很暗，但總有點點螢火；冰糕很涼，但總有絲絲的香甜；蟬鳴有力，但總有心安的聲音。我覺得他們全都很有趣，也全都很像你，願你可以像夏天一樣精彩熱烈，繼續滿懷期待的迎接每一個夏天。
+                        span MJQ
+                .story-bg
+                    img(src="public/images/storybg01.png", alt="")
+                    .story-text
+                        span To 每個人
+                        span 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
+                        span Hebe
+    
+
+    // 頁尾開始
+    footer
+        .container
+            .row
+                dl.col-12.col-md-3.text-left
+                    dt 
+                        dd
+                            img(src="public/images/logo02.png", alt="綠。文具坊")
+                        dd 
+                            p Copyright © 2022 綠。文具坊
+                        dd 
+                            p 僅做為課程練習使用，不做任何商業行為。
+                dl.col-12.col-md-3.text-left
+                    dt 
+                        dd 
+                            p 地址：彰化縣彰化市光復路
+                        dd 
+                            p 營業時間：14:00~20:00(不定時公休)
+                dl.col-12.col-md-3.text-left
+                    dt HOW TO SHOP
+                        dd 
+                            a(href="#") 購物說明
+                        dd 
+                            a(href="#") 常見問題
+                        dd 
+                            a(href="#") 聯絡我們
+                dl.col-12.col-md-3.text-left
+                    dt ABOUT US
+                        dd 
+                            a(href="#") 品牌故事
+                        dd 
+                            a(href="#") 條款與細則
+                        dd 
+                            a(href="#") 隱私權政策
