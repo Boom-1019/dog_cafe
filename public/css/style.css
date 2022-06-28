@@ -385,6 +385,8 @@ header nav > ul > li > a:hover {
 }
 
 .title-img img {
+  margin-top: 30px;
+  margin-bottom: 10px;
   width: 220px;
 }
 
@@ -417,7 +419,18 @@ header nav > ul > li > a:hover {
   letter-spacing: 1px;
 }
 
-.story-text > span {
+.story-text-odd {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
+
+.story-text, .story-text-odd > span {
   font-size: 20px;
   padding-top: 15px;
 }
@@ -445,4 +458,14 @@ dd a, dd p {
   letter-spacing: 1px;
   color: white;
   margin-bottom: 5px;
+}
+
+.breadcrumb {
+  margin: 0px 0px 20px 0px;
+  color: #999999;
+  width: 100%;
+}
+
+.breadcrumb > a {
+  color: #3d7944;
 }
