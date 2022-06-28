@@ -4,8 +4,28 @@ h2 {
   letter-spacing: 1px;
 }
 
-.container > .row p {
+.naruto p {
   margin-bottom: 20px;
   font-size: 24px;
   letter-spacing: 1px;
+  line-height: 150%;
+}
+
+.box-wrap {
+  position: relative;
+}
+
+.naruto {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.about-us {
+  background-image: url(../images/bg01.png), url(../images/bg02.png);
+  background-repeat: no-repeat;
+  background-position: 0% 5%, right bottom;
 }
