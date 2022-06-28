@@ -380,8 +380,12 @@ header nav > ul > li > a:hover {
 }
 
 .title-img {
-  width: 215px;
   display: flex;
+  justify-content: center;
+}
+
+.title-img img {
+  width: 220px;
 }
 
 .story-wrapper {
