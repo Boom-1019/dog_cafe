@@ -32,26 +32,26 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-around;
-    position: relative;
+    // position: relative;
 }
 
 .logo-wrapper img{
     max-width: 150px;
-    height: 100%;
+    // height: 100%;
 }
 
 header .icon-wrapper{
-    width: 100%;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
-    left: 70px;
-    top: 95px;
+    // position: absolute;
+    // left: 70px;
+    // top: 95px;
 }
 
 header .icon-wrapper img{
 width: 22px;
-padding-left: 10px;
+padding-top: 10px;
+padding-left: 15px;
 padding-right: 5px;
 }
 
@@ -168,6 +168,10 @@ color: rgb(113, 173, 120);
   }
   //*文字相關樣式結束*//
 
+#banner{
+    display: flex;
+    overflow: hidden;
+}
 
 //main樣式
 .img-store{
@@ -190,15 +194,21 @@ color: rgb(113, 173, 120);
     right: 100px;
 }
 
-main>section>h2{
+section>h2{
     font-size: 32px;
     text-align: center;
     letter-spacing: 2px;
+    padding-top: 20px;
 }
 
 .story-wrapper{
     width: 100%;
     display: flex;
+    overflow: hidden;
+}
+
+.story-wrapper .story-bg:nth-child(even){
+    margin-top: 80px;
 }
 
 .story-bg{
@@ -206,19 +216,25 @@ main>section>h2{
 }
 
 .story-bg>img{
-margin: 10px;
+    margin: 10px;
 }
 
 .story-text{
     position: absolute;
-    left: 30px;
-    top: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 380px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    width: 400px;
-    height: 322px;
+    letter-spacing: 1px;
 }
+
+.story-text>span{
+    padding-bottom: 10px;
+
+}
+
 
 //footer樣式
 
