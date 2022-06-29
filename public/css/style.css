@@ -339,6 +339,27 @@ header nav > ul > li > a:hover {
   height: auto;
 }
 
+.img-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+.img-wrap img {
+  vertical-align: top;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .text-center {
   text-align: center;
 }
@@ -358,6 +379,14 @@ header nav > ul > li > a:hover {
 #banner {
   display: flex;
   overflow: hidden;
+}
+
+.img-floor {
+  padding-bottom: 2%;
+  margin-bottom: 30px;
+  background-image: url(../images/floor.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .img-store {
@@ -433,6 +462,20 @@ header nav > ul > li > a:hover {
 .story-text, .story-text-odd > span {
   font-size: 20px;
   padding-top: 15px;
+}
+
+.brand-recommended {
+  background-color: #FAF6BA;
+  width: 100%;
+  height: 440px;
+  margin-top: 30px;
+}
+
+.brand-recommended h2 {
+  font-size: 32px;
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 footer {

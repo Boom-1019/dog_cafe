@@ -16,7 +16,7 @@ body
                         a(href="#")
                             img(src="public/images/search.png", alt="搜尋")
                     li
-                        a(href="#")
+                        a(href="login.html")
                             img(src="public/images/user.png", alt="會員中心")
                     li
                         a(href="#")
@@ -50,17 +50,16 @@ body
             img.img-fluid(src='public/images/banner02.png' alt='南國的孩子 紙膠帶|NEW IN!')
 
     
-        main
-            section
-                .img-store
-                    a(href="#") 
-                        img(src="public/images/store.png", alt="綠。文具坊|產品類別")
-                    .img-mailbox
-                        a(href="#") 
-                            img(src="public/images/mailbox.png", alt="綠。文具坊|寫信空間")
-                    .img-grandpa
-                        a(href="about-us.html") 
-                            img(src="public/images/grandpa.png", alt="綠。文具坊|關於我們")
+    main.img-floor
+        .img-store
+            a(href="#") 
+                img.img-fluid(src="public/images/store.png", alt="綠。文具坊|產品類別")
+            .img-mailbox
+                a(href="#") 
+                    img.img-fluid(src="public/images/mailbox.png", alt="綠。文具坊|寫信空間")
+            .img-grandpa
+                a(href="about-us.html") 
+                    img.img-fluid(src="public/images/grandpa.png", alt="綠。文具坊|關於我們")
             
     section
         .container.title-img
@@ -96,7 +95,20 @@ body
                     span To 每個人
                     span 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
                     span.text-right Hebe
-    
+
+        section.brand-recommended 
+            .container 
+                h2 ･✧･　精選品牌　･✧･
+                .row
+                    .col-12.col-md-4
+                        a.img-wrap(href="#") 
+                            img.img-fluid(src="public/images/brand-recommended01.png", alt="")
+                    .col-12.col-md-4
+                        a.img-wrap(href="#") 
+                            img.img-fluid(src="public/images/brand-recommended02.png", alt="")
+                    .col-12.col-md-4
+                        a.img-wrap(href="#") 
+                            img.img-fluid(src="public/images/maoflower.png", alt="")
 
     // 頁尾開始
     footer
