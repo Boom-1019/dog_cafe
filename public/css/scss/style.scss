@@ -39,7 +39,11 @@ body{
     // height: 100%;
 
 }
+.logo-wrapper span{
+    width: 111px;
+    // height: 100%;
 
+}
 header .icon-wrapper{
     display: flex;
     justify-content: flex-end;
@@ -51,7 +55,7 @@ header .icon-wrapper{
 header .icon-wrapper img{
 width: 22px;
 padding-top: 10px;
-padding-left: 15px;
+padding-left: 10px;
 padding-right: 5px;
 }
 
