@@ -108,6 +108,7 @@ color: rgb(113, 173, 120);
         width: 55px;
         padding: 10px;
         display: none;
+        z-index: 1;
     }
 
     .submenu>li{
@@ -226,12 +227,18 @@ vertical-align: top;
     bottom: 0px;
 }
 
+.img-mailbox:hover{
+    transform: rotate(-8deg);
+}
 .img-grandpa{
     position: absolute;
     bottom: 0px;
     right: 100px;
 }
 
+.img-grandpa:hover{
+    transform: rotate(8deg);
+}
 .title-img{
     display: flex;
     justify-content:center;
@@ -290,7 +297,6 @@ vertical-align: top;
 .brand-recommended {
     background-color: #FAF6BA;
     width: 100%;
-    height: 440px;
     margin-top: 30px;
 }
 

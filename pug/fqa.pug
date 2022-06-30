@@ -1,0 +1,164 @@
+doctype html
+head 
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title 常見問題|綠。文具坊
+    link(rel='stylesheet',href='public/css/style.css')
+    link(rel="stylesheet", href="public/css/fqa.css")
+    link(rel="shortcut icon",href="public/images/favicon.ico")
+    link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+
+    
+body 
+    //頁首開始
+    header 
+        .row
+            //- a#btn-nav-toggle.icon-menu(href="#") menu
+            
+            .logo-wrapper.container
+                span 
+                a(href="index.html" )
+                    img(src="public/images/logo01.png", alt="綠。文具坊")
+                ul.icon-wrapper 
+                    li
+                        a(href="#")
+                            img(src="public/images/search.png", alt="搜尋")
+                    li
+                        a(href="login.html")
+                            img(src="public/images/user.png", alt="會員中心")
+                    li
+                        a(href="#")
+                            img(src="public/images/shopping-cart.png", alt="購物車")
+            nav 
+                ul.container 
+                    li 
+                        a(href="about-us.html") 關於我們
+                    li 
+                        a(href="#") 最新消息
+                    li 
+                        a(href="#") 產品類別
+                        ul.submenu 
+                            li 
+                                a(href="#") 紙製品
+                            li 
+                                a(href="#") 文具
+                            li 
+                                a(href="#") 雜貨
+                            li 
+                                a(href="#") 童玩
+                    li 
+                        a(href="#") 寫信空間
+    //頁首結尾
+
+    .tab-link 
+        a.active(href="#tab1") 購物說明
+        a(href="#tab2") 訂購問題
+        a(href="#tab3") 帳號問題
+        a(href="#tab4") 售後服務
+        a(href="#tab5") 配送問題
+    .bgc-yellow
+        .container
+            img.margin50.img-fluid(src="public/images/green.png", alt="")
+            #tab1.tab-content.active
+                .bgc-white
+                    .flex-space-between
+                        h2 購物須知
+                        p 店內商品為「現貨+預購」銷售方式。現貨商品出貨天數為3-7個工作天，預購商品為7-20個工作天不含假日。
+                    img.img-fluid(src="public/images/line01.png", alt="")
+                    .flex-space-between
+                        h2 退換貨須知
+                        p 購買前請先詳細閱讀商品介紹。若有相關問題，歡迎聯絡我們，將有專人為您解答。本店僅提供瑕疵品之退貨服務，無提供任何換貨服務， 我們將在收到商品後，以購物金形式退款至您的會員帳號中。
+            #tab2.tab-content 
+                .container 
+                    .question-content
+                        .question 購物車是否能保留商品？
+                        .answer 放入購物車的商品不具有留貨功能，若您有心儀的商品，放入購物車後請記得完成下單結帳流程，以免商品售礊。
+                    .question-content
+                        .question 如何保留商品？
+                        .answer 如果您有希望先保留的商品，並待日後再決定取貨或寄送時間，請按照以下步驟下單： <span> 留貨店取 <br> 1、將欲留貨的商品加入購物車並進行結帳流程。<br> 2、取貨方式請選擇「門市店取」。<br> 3、取貨時間選擇一個供我們參考的時間即可。<br> 4、下單後請完成付款動作。<br> *完成付款才會進行揀貨*<br> 以上完成後您即可自行安排方便的時間來店取貨，不一定要按照第３點選擇的時間來店，但記得務必是在店舖營業時間方可來店取貨。<br><span> 留貨待寄 <br> 1、將欲留貨的商品加入購物車並進行結帳流程。<br> 2、取貨方式請選擇您希望的配送方式。<br> 3、請在「備註」欄寫上 "先留貨"。<br> 4、下單後請完成付款動作。<br> *完成付款才會進行揀貨*    <br> 以上完成後我們就會幫您揀貨保留商品，待您欲寄送時再聯絡我們告知安排出貨即可。
+                    .question-content
+                        .question 是否提供海外購物？ 
+                        .answer 是的，本網站有提供海外客人購物服務。
+                    .question-content
+                        .question 有提供統一發票嗎？ 
+                        .answer 每筆訂單皆會提供手寫式統一發票，我們會在包貨時開立，並附在包裹內一併寄出。如果您有報帳需求，請於訂單的「備註」欄內寫明發票「抬頭、統編」 。
+            #tab3.tab-content 
+                .container 
+                    .question-content
+                        .question 一定要註冊帳號才能購物嗎？
+                        .answer 本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。
+                    .question-content
+                        .question 網站會員是否有福利？
+                        .answer 目前所有網站註冊會員皆享有回饋金福利。
+                    .question-content
+                        .question 可以修改帳號資料或密碼嗎？ 
+                        .answer 如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。
+                    .question-content
+                        .question 註冊會員後或下單完成後沒有收到確認信？ 
+                        .answer 有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。
+            #tab4.tab-content 
+                .container 
+                    .question-content
+                        .question 一定要註冊帳號才能購物嗎？
+                        .answer 本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。
+                    .question-content
+                        .question 網站會員是否有福利？
+                        .answer 目前所有網站註冊會員皆享有回饋金福利。
+                    .question-content
+                        .question 可以修改帳號資料或密碼嗎？ 
+                        .answer 如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。
+                    .question-content
+                        .question 註冊會員後或下單完成後沒有收到確認信？ 
+                        .answer 有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。
+            #tab5.tab-content 
+                .container 
+                    .question-content
+                        .question 一定要註冊帳號才能購物嗎？
+                        .answer 本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。
+                    .question-content
+                        .question 網站會員是否有福利？
+                        .answer 目前所有網站註冊會員皆享有回饋金福利。
+                    .question-content
+                        .question 可以修改帳號資料或密碼嗎？ 
+                        .answer 如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。
+                    .question-content
+                        .question 註冊會員後或下單完成後沒有收到確認信？ 
+                        .answer 有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。
+    
+    
+    
+    // 頁尾開始
+    footer
+        .container
+            .row
+                dl.col-12.col-md-3.text-left
+                    dt 
+                        dd
+                            img(src="public/images/logo02.png", alt="綠。文具坊")
+                        dd 
+                            p Copyright © 2022 綠。文具坊
+                        dd 
+                            p 僅做為課程練習使用，不做任何商業行為。
+                dl.col-12.col-md-3.text-left
+                    dt 
+                        dd 
+                            p 地址：彰化縣彰化市光復路
+                        dd 
+                            p 營業時間：14:00~20:00(不定時公休)
+                dl.col-12.col-md-3.text-left
+                    dt HOW TO SHOP
+                        dd 
+                            a(href="fqa.html") 購物說明
+                        dd 
+                            a(href="fqa.html") 常見問題
+                        dd 
+                            a(href="#") 聯絡我們
+                dl.col-12.col-md-3.text-left
+                    dt ABOUT US
+                        dd 
+                            a(href="about-us.html") 品牌故事
+                        dd 
+                            a(href="#") 條款與細則
+                        dd 
+                            a(href="#") 隱私權政策
