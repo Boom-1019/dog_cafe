@@ -35,9 +35,20 @@ form a{
     color: black;
     text-decoration: underline;
     padding-top: 2px;
+    display: block;
+    width: fit-content;
+    margin-left: 80%;
 }
 .button{
     background-color: #3d7944;
     color: #ffffff;
     font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover{
+    background-color: #3d7944c8;
+    
+
 }
