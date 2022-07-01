@@ -52,25 +52,25 @@ body
     .container
       .row
         // 麵包屑
-        #tab1.tab-content.active.breadcrumb.col-12
+        #tab-breadcrumb1.tab-content.active.breadcrumb.col-12
           a(href='index.html') 首頁
           span  > 
           a(href='fqa.html') 常見問題
           span  > 
           a(href='#') 購物說明
-        #tab2.tab-content.tab-content.breadcrumb.col-12
+        #tab-breadcrumb2.tab-content.tab-content.breadcrumb.col-12
           a(href='index.html') 首頁
           span  > 
           a(href='fqa.html') 常見問題
           span  > 
           a(href='#') 訂購問題
-        #tab3.tab-content.breadcrumb.col-12
+        #tab-breadcrumb3.tab-content.breadcrumb.col-12
           a(href='index.html') 首頁
           span  > 
           a(href='fqa.html') 常見問題
           span  > 
           a(href='#') 帳號問題
-        #tab4.tab-content.breadcrumb.col-12
+        #tab-breadcrumb4.tab-content.breadcrumb.col-12
           a(href='index.html') 首頁
           span  > 
           a(href='fqa.html') 常見問題
@@ -78,10 +78,10 @@ body
           a(href='#') 配送問題
           
     .tab-link 
-        a.active(href="#tab1") 購物說明
-        a(href="#tab2") 訂購問題
-        a(href="#tab3") 帳號問題
-        a(href="#tab4") 配送問題
+        a.active(href="#tab1,#tab-breadcrumb1") 購物說明
+        a(href="#tab2,#tab-breadcrumb2") 訂購問題
+        a(href="#tab3,#tab-breadcrumb3") 帳號問題
+        a(href="#tab4,#tab-breadcrumb4") 配送問題
     .bgc-yellow
         .container
             img.margin50.img-fluid(src="public/images/green.png", alt="")

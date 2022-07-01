@@ -13,15 +13,8 @@ line-height: 150%;
 
 .box-wrap{
     position: relative;
-}
-
-.naruto{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-	right: 0;
-    left:0;
-    bottom: 0;
+    display: flex;
+    align-items: center;
 }
 
 .about-us{

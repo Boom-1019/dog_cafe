@@ -13,3 +13,4 @@ $('.question-content').on('click', function(){
     $(this).siblings().removeClass('active')
 
 })//.question-content end
+

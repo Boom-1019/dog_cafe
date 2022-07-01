@@ -82,6 +82,8 @@
 .question-content {
   border-left: 4px solid #328A3D;
   margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
   cursor: pointer;
   line-height: 25px;
 }
