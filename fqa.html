@@ -38,7 +38,16 @@
     </div>
   </header>
   <!--頁首結尾-->
-  <div class="tab-link"> <a class="active" href="#tab1">購物說明</a><a href="#tab2">訂購問題</a><a href="#tab3">帳號問題</a><a href="#tab4">售後服務</a><a href="#tab5">配送問題</a></div>
+  <div class="container">
+    <div class="row">
+      <!-- 麵包屑-->
+      <div class="tab-content active breadcrumb col-12" id="tab1"><a href="index.html">首頁</a><span> > </span><a href="fqa.html">常見問題</a><span> > </span><a href="#">購物說明</a></div>
+      <div class="tab-content tab-content breadcrumb col-12" id="tab2"><a href="index.html">首頁</a><span> > </span><a href="fqa.html">常見問題</a><span> > </span><a href="#">訂購問題</a></div>
+      <div class="tab-content breadcrumb col-12" id="tab3"><a href="index.html">首頁</a><span> > </span><a href="fqa.html">常見問題</a><span> > </span><a href="#">帳號問題</a></div>
+      <div class="tab-content breadcrumb col-12" id="tab4"><a href="index.html">首頁</a><span> > </span><a href="fqa.html">常見問題</a><span> > </span><a href="#">配送問題</a></div>
+    </div>
+  </div>
+  <div class="tab-link"> <a class="active" href="#tab1">購物說明</a><a href="#tab2">訂購問題</a><a href="#tab3">帳號問題</a><a href="#tab4">配送問題</a></div>
   <div class="bgc-yellow">
     <div class="container"><img class="margin50 img-fluid" src="public/images/green.png" alt="">
       <div class="tab-content active" id="tab1">
@@ -48,88 +57,102 @@
             <p>店內商品為「現貨+預購」銷售方式。現貨商品出貨天數為3-7個工作天，預購商品為7-20個工作天不含假日。</p>
           </div><img class="img-fluid" src="public/images/line01.png" alt="">
           <div class="flex-space-between">
+            <h2>購物流程</h2>
+            <p>選購商品 ► 購物車 ► 繼續購物/確認結帳 ► 選擇支付方式 ► 選擇配送方式 ► 確認訂單訊息 ► 結帳 ► 等待貨到 </p>
+          </div><img class="img-fluid" src="public/images/line01.png" alt="">
+          <div class="flex-space-between">
             <h2>退換貨須知</h2>
             <p>購買前請先詳細閱讀商品介紹。若有相關問題，歡迎聯絡我們，將有專人為您解答。本店僅提供瑕疵品之退貨服務，無提供任何換貨服務， 我們將在收到商品後，以購物金形式退款至您的會員帳號中。</p>
           </div>
         </div>
       </div>
       <div class="tab-content" id="tab2"> 
-        <div class="container"> 
-          <div class="question-content">
-            <div class="question">購物車是否能保留商品？</div>
-            <div class="answer">放入購物車的商品不具有留貨功能，若您有心儀的商品，放入購物車後請記得完成下單結帳流程，以免商品售礊。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">如何保留商品？</div>
-            <div class="answer">如果您有希望先保留的商品，並待日後再決定取貨或寄送時間，請按照以下步驟下單： <span> 留貨店取 <br> 1、將欲留貨的商品加入購物車並進行結帳流程。<br> 2、取貨方式請選擇「門市店取」。<br> 3、取貨時間選擇一個供我們參考的時間即可。<br> 4、下單後請完成付款動作。<br> *完成付款才會進行揀貨*<br> 以上完成後您即可自行安排方便的時間來店取貨，不一定要按照第３點選擇的時間來店，但記得務必是在店舖營業時間方可來店取貨。<br><span> 留貨待寄 <br> 1、將欲留貨的商品加入購物車並進行結帳流程。<br> 2、取貨方式請選擇您希望的配送方式。<br> 3、請在「備註」欄寫上 "先留貨"。<br> 4、下單後請完成付款動作。<br> *完成付款才會進行揀貨*    <br> 以上完成後我們就會幫您揀貨保留商品，待您欲寄送時再聯絡我們告知安排出貨即可。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">是否提供海外購物？ </div>
-            <div class="answer">是的，本網站有提供海外客人購物服務。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">有提供統一發票嗎？ </div>
-            <div class="answer">每筆訂單皆會提供手寫式統一發票，我們會在包貨時開立，並附在包裹內一併寄出。如果您有報帳需求，請於訂單的「備註」欄內寫明發票「抬頭、統編」 。</div>
+        <div class="bgc-img">
+          <div class="container">
+            <div class="question-content">
+              <div class="question">購物車是否能保留商品？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">放入購物車的商品不具有留貨功能，若您有心儀的商品，放入購物車後請記得完成下單結帳流程，以免商品售礊。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">如何保留商品？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">如果您有希望先保留的商品，並待日後再決定取貨或寄送時間，請按照以下步驟下單： <br><br><span>留貨店取</span> <br> 1、將欲留貨的商品加入購物車並進行結帳流程。<br> 2、取貨方式請選擇「門市店取」。<br> 3、取貨時間選擇一個供我們參考的時間即可。<br> 4、下單後請完成付款動作。<br> *完成付款才會進行揀貨*<br> 以上完成後您即可自行安排方便的時間來店取貨，不一定要按照第３點選擇的時間來店，但記得務必是在店舖營業時間方可來店取貨。<br><br><span>留貨待寄</span><br> 1、將欲留貨的商品加入購物車並進行結帳流程。<br> 2、取貨方式請選擇您希望的配送方式。<br> 3、請在「備註」欄寫上 "先留貨"。<br> 4、下單後請完成付款動作。<br> *完成付款才會進行揀貨*    <br> 以上完成後我們就會幫您揀貨保留商品，待您欲寄送時再聯絡我們告知安排出貨即可。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">是否提供海外購物？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"> </i></div>
+              </div>
+              <div class="answer">是的，本網站有提供海外客人購物服務。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">有提供統一發票嗎？ 
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">每筆訂單皆會提供手寫式統一發票，我們會在包貨時開立，並附在包裹內一併寄出。如果您有報帳需求，請於訂單的「備註」欄內寫明發票「抬頭、統編」 。</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="tab-content" id="tab3"> 
-        <div class="container"> 
-          <div class="question-content">
-            <div class="question">一定要註冊帳號才能購物嗎？</div>
-            <div class="answer">本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">網站會員是否有福利？</div>
-            <div class="answer">目前所有網站註冊會員皆享有回饋金福利。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">可以修改帳號資料或密碼嗎？ </div>
-            <div class="answer">如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">註冊會員後或下單完成後沒有收到確認信？ </div>
-            <div class="answer">有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。</div>
+      <div class="tab-content" id="tab3">
+        <div class="bgc-img">
+          <div class="container"> 
+            <div class="question-content">
+              <div class="question">一定要註冊帳號才能購物嗎？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">網站會員是否有福利？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">目前所有網站註冊會員皆享有回饋金福利。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">可以修改帳號資料或密碼嗎？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"> </i></div>
+              </div>
+              <div class="answer">如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">註冊會員後或下單完成後沒有收到確認信？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"> </i></div>
+              </div>
+              <div class="answer">有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。</div>
+            </div>
           </div>
         </div>
       </div>
       <div class="tab-content" id="tab4"> 
-        <div class="container"> 
-          <div class="question-content">
-            <div class="question">一定要註冊帳號才能購物嗎？</div>
-            <div class="answer">本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">網站會員是否有福利？</div>
-            <div class="answer">目前所有網站註冊會員皆享有回饋金福利。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">可以修改帳號資料或密碼嗎？ </div>
-            <div class="answer">如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">註冊會員後或下單完成後沒有收到確認信？ </div>
-            <div class="answer">有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。</div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-content" id="tab5"> 
-        <div class="container"> 
-          <div class="question-content">
-            <div class="question">一定要註冊帳號才能購物嗎？</div>
-            <div class="answer">本網站需要註冊帳號才能進行購物，請至<a href="#">會員註冊</a>進行註冊。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">網站會員是否有福利？</div>
-            <div class="answer">目前所有網站註冊會員皆享有回饋金福利。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">可以修改帳號資料或密碼嗎？ </div>
-            <div class="answer">如欲更改帳號資料或密碼，請先登入帳號後，進入「我的帳號→帳號資料 (編輯)」進行修改。</div>
-          </div>
-          <div class="question-content">
-            <div class="question">註冊會員後或下單完成後沒有收到確認信？ </div>
-            <div class="answer">有些電子信箱平台會有自動偵測阻擋廣告信的功能，如果您未收到註冊確認信或是訂單確認信，請查看您信箱的垃圾郵件匣，並將信件勾選為「非垃圾郵件」，避免下次信件仍被自動歸入垃圾郵件。</div>
+        <div class="bgc-img">
+          <div class="container"> 
+            <div class="question-content">
+              <div class="question">配送天數?
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">郵局寄送：通常約 2 - 3 個工作天<br>超商店到店：通常約 3 個工作天<br>海外配送：通常空運約 7 - 14 個工作天</div>
+            </div>
+            <div class="question-content">
+              <div class="question">如何查詢商品配送狀況？
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="answer">您可於【我的帳號→訂購紀錄】查看各訂單配送狀態，或在訂單紀錄內複製包裹編號後，透過以外連結查看。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">如何更改配送方式?
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"> </i></div>
+              </div>
+              <div class="answer">下單完成後，如果您需要更改配送方式，請到「Facebook 粉絲專頁」私訊或是透過網站下方的「聯絡我們」提供您的訂單編號以及要使用的配送方式，我們會為您變更。</div>
+            </div>
+            <div class="question-content">
+              <div class="question">店到店包裹逾期未領怎麼辦？ 
+                <div class="icon-arrow"> <i class="fa-solid fa-plus"> </i></div>
+              </div>
+              <div class="answer">店到店包裹抵達門市時，您的手機會收到超商物流的通知訊息。訊息中會告知取貨期限，請務必於期限前至門市領取包裹。<br><br>若逾期未領，包裹將被退回原寄件門市，通常要等待７個工作天。待我們至原寄件門市取回包裹後才能再次幫您出貨，而二次出貨的運費需要會員自行負擔。</div>
+            </div>
           </div>
         </div>
       </div>
@@ -177,4 +200,6 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="public/js/fqa-script.js"> </script>
 </body>
