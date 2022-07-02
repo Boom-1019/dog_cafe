@@ -585,6 +585,14 @@ header nav > ul > li > a:hover {
   margin-bottom: 50px;
 }
 
+h2 {
+  padding-top: 30px;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+}
+
 footer {
   color: white;
   background-color: #3d7944;
