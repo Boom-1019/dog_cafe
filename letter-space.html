@@ -3,8 +3,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>會員中心|綠。文具坊</title>
-  <link rel="stylesheet" href="public/css/login-style.css">
+  <title>寫信空間|綠。文具坊</title>
+  <link rel="stylesheet" href="public/css/letter-space.css">
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="shortcut icon" href="public/images/favicon.ico">
 </head>
@@ -40,14 +40,27 @@
   <div class="container">
     <div class="row">
       <!-- 麵包屑-->
-      <div class="breadcrumb col-12"><a href="index.html">首頁</a><span> > </span><a href="login.html">會員中心</a></div>
-      <div class="login"> <img class="img-fluid" src="public/images/login.png" alt="">
-        <form>
-          <label>電子郵件</label>
-          <input type="email"><br>
-          <label>密碼</label>
-          <input type="password"><a class="text-right" href="#">忘記密碼 </a><br>
-          <input class="button" type="submit" value="登入"><a class="text-right" href="#">註冊會員  </a>
+      <div class="breadcrumb col-12"><a href="index.html">首頁</a><span> > </span><a href="letter-space.html">寫信空間</a></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form class="form" action="javascript:;">
+          <h2 class="text-center">「寫下你的故事，讓我們幫你守護。」</h2>
+          <div class="input-group">
+            <input type="text" id="from-name" placeholder="你是誰?">
+            <input type="text" id="to-name" placeholder="想寫給誰?">
+          </div>
+          <div class="input-group">
+            <textarea name="content" cols="45" rows="6">內容</textarea>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="">我同意將我的故事授權給綠。文具坊作為店內展覽及官網使用。
+          </div>
+          <div class="input-group">
+            <input class="btn-primary" type="submit" value="登入">
+          </div>
         </form>
       </div>
     </div>

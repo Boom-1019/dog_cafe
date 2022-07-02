@@ -126,219 +126,310 @@ header nav > ul > li > a:hover {
 .col-1 {
   --num: calc(12 / 1);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-2 {
   --num: calc(12 / 2);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-3 {
   --num: calc(12 / 3);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-4 {
   --num: calc(12 / 4);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-5 {
   --num: calc(12 / 5);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-6 {
   --num: calc(12 / 6);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-7 {
   --num: calc(12 / 7);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-8 {
   --num: calc(12 / 8);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-9 {
   --num: calc(12 / 9);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-10 {
   --num: calc(12 / 10);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-11 {
   --num: calc(12 / 11);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 .col-12 {
   --num: calc(12 / 12);
   width: calc(100% / var(--num) - 30px);
-  margin: 0px 15px 40px 15px;
+  margin: 0px 15px 0px 15px;
 }
 
 @media (min-width: 768px) {
   .col-md-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-2 {
     --num: calc(12 / 2);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-3 {
     --num: calc(12 / 3);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-4 {
     --num: calc(12 / 4);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-5 {
     --num: calc(12 / 5);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-6 {
     --num: calc(12 / 6);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-7 {
     --num: calc(12 / 7);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-8 {
     --num: calc(12 / 8);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-9 {
     --num: calc(12 / 9);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-10 {
     --num: calc(12 / 10);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-11 {
     --num: calc(12 / 11);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-md-12 {
     --num: calc(12 / 12);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 }
 @media (min-width: 1200px) {
   .col-lg-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-2 {
     --num: calc(12 / 2);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-3 {
     --num: calc(12 / 3);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-4 {
     --num: calc(12 / 4);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-5 {
     --num: calc(12 / 5);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-6 {
     --num: calc(12 / 6);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-7 {
     --num: calc(12 / 7);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-8 {
     --num: calc(12 / 8);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-9 {
     --num: calc(12 / 9);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-10 {
     --num: calc(12 / 10);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-11 {
     --num: calc(12 / 11);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .col-lg-12 {
     --num: calc(12 / 12);
     width: calc(100% / var(--num) - 30px);
-    margin: 0px 15px 40px 15px;
+    margin: 0px 15px 0px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: -1;
+  }
+}
+@media (min-width: 768px) {
+  .offset-md-1 {
+    --ml-num: calc(12 / 1);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-2 {
+    --ml-num: calc(12 / 2);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-3 {
+    --ml-num: calc(12 / 3);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-4 {
+    --ml-num: calc(12 / 4);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-5 {
+    --ml-num: calc(12 / 5);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-6 {
+    --ml-num: calc(12 / 6);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-7 {
+    --ml-num: calc(12 / 7);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-8 {
+    --ml-num: calc(12 / 8);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-9 {
+    --ml-num: calc(12 / 9);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-10 {
+    --ml-num: calc(12 / 10);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-11 {
+    --ml-num: calc(12 / 11);
+    margin-left: calc(100% / var(--ml-num));
+  }
+
+  .offset-md-12 {
+    --ml-num: calc(12 / 12);
+    margin-left: calc(100% / var(--ml-num));
+  }
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mb-4 {
+  margin-bottom: 4em;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+@media (min-width: 768px) {
+  .mb-md-0 {
+    margin-bottom: 0;
   }
 }
 .img-fluid {
@@ -394,6 +485,7 @@ header nav > ul > li > a:hover {
   background-image: url(../images/floor.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  max-width: 100%;
 }
 
 .img-store {
@@ -405,12 +497,12 @@ header nav > ul > li > a:hover {
 
 .img-mailbox {
   position: absolute;
-  left: 110px;
-  bottom: 0px;
+  bottom: 0;
+  left: 100px;
 }
 
 .img-mailbox:hover {
-  transform: rotate(-8deg);
+  transform: rotate(-5deg);
 }
 
 .img-grandpa {
@@ -483,6 +575,7 @@ header nav > ul > li > a:hover {
   background-color: #FAF6BA;
   width: 100%;
   margin-top: 30px;
+  padding-bottom: 40px;
 }
 
 .brand-recommended h2 {
