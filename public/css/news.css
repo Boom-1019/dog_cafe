@@ -1,0 +1,93 @@
+.tab-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tab-link > a {
+  text-decoration: none;
+  width: 20%;
+  margin: 2%;
+  margin-bottom: 0px;
+  display: block;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  background-color: #328A3D;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab-link > a.active {
+  background-color: #FAF7BD;
+  color: black;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.bgc-yellow {
+  background-color: #FAF7BD;
+}
+
+.bgc-img {
+  background-color: #fff;
+  padding: 30px;
+  padding-top: 10px;
+  background-image: url(../images/bg05.png);
+  background-repeat: repeat;
+}
+
+.bgc-img1 {
+  background-color: #fff;
+  padding: 30px;
+  background-image: url(../images/bg05.png);
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.margin50 {
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.bgc-img h2 {
+  padding-top: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.bgc-img p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.news-content {
+  width: 90%;
+}
+
+.bgc-img > .row > .img-flex img {
+  width: 80%;
+}
+
+.row {
+  align-items: center;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center;
+}

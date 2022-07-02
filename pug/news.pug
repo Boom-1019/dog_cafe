@@ -3,10 +3,12 @@ head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title 會員中心|綠。文具坊
-    link(rel='stylesheet' href='public/css/login-style.css')
-    link(rel='stylesheet' href='public/css/style.css')
+    title 最新消息|綠。文具坊
+    link(rel='stylesheet',href='public/css/style.css')
+    link(rel="stylesheet", href="public/css/news.css")
     link(rel="shortcut icon",href="public/images/favicon.ico")
+    link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+    
 body 
     //頁首開始
     header 
@@ -32,7 +34,7 @@ body
                     li 
                         a(href="about-us.html") 關於我們
                     li 
-                        a(href="news.html") 最新消息
+                        a(href="#") 最新消息
                     li 
                         a(href="#") 產品類別
                         ul.submenu 
@@ -50,25 +52,61 @@ body
     .container
       .row
         // 麵包屑
-        .breadcrumb.col-12
+        #tab-breadcrumb1.tab-content.active.breadcrumb.col-12
           a(href='index.html') 首頁
           span  > 
-          a(href='login.html') 會員中心
+          a(href='fqa.html') 最新消息
+          span  > 
+          a(href='#') 公休日
+        #tab-breadcrumb2.tab-content.tab-content.breadcrumb.col-12
+          a(href='index.html') 首頁
+          span  > 
+          a(href='fqa.html') 最新消息
+          span  > 
+          a(href='#') 展覽訊息
 
-        .login 
-            img.img-fluid(src="public/images/login.png", alt="")
-            form
-                label 電子郵件
-                input(type='email')
-                br
-                label 密碼
-                input(type='password')
-                a.text-right(href="#") 忘記密碼 
-                br
-                input.button(type='submit' value='登入')
-                a.text-right(href="#") 註冊會員  
+          
+    .tab-link 
+        a.active(href="#tab1,#tab-breadcrumb1") 公休日
+        a(href="#tab2,#tab-breadcrumb2") 展覽訊息
 
-            
+    .bgc-yellow
+        .container
+            img.margin50.img-fluid(src="public/images/green.png", alt="")
+            #tab1.tab-content.active
+                .bgc-img1
+                    img.img-fluid(src="public/images/date.png", alt="")
+            #tab2.tab-content 
+                .bgc-img
+                    .row
+                        .col-12
+                            h2 ･✐･故事時光 - 2022手帳展･✐･
+                    .row
+                        .col-12.col-md-6.img-flex
+                            img(src="public/images/news01.png", alt="")
+                        .col-12.col-md-6
+                            .news-content
+                                h3 展覽日期
+                                p 2022/07/01 ~ 2022/07/03
+                                h3 展覽名稱
+                                p 故事時光 - 2022手帳展
+                                h3 展覽介紹
+                                p 本次手帳展總共邀請了八手帳達人，共同展出他們的私人手帳，希望透過這個活動讓每位手帳人都能一窺達人們的手帳。
+                        img.img-fluid.margin50(src="public/images/line01.png", alt="")
+                    .row
+                        .col-12
+                            h2 ･✧･　2022貼紙大亂鬥　･✧･
+                    .row
+                        .col-12.col-md-6.img-flex
+                            .news-content
+                                h3 展覽日期
+                                p Coming soon~
+                                h3 展覽名稱
+                                p 2022 貼紙大亂鬥
+                                h3 展覽介紹
+                                p 在這裡﻿，貼紙控的你會無法控制的全都想要！12組選手帶來滿滿的貼紙互相鬥陣，就是要讓你經歷一場眼花撩亂的視覺饗宴！
+                        .col-12.col-md-6.img-flex
+                            img(src="public/images/news02.png", alt="")
     // 頁尾開始
     footer
         .container
@@ -103,3 +141,6 @@ body
                             a(href="#") 條款與細則
                         dd 
                             a(href="#") 隱私權政策
+
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous")
+    script(src="public/js/fqa-script.js") 
