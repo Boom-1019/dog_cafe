@@ -3,9 +3,9 @@ head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title 綠。文具坊
+    title 產品列表|綠。文具坊
     link(rel='stylesheet' href='public/css/style.css')
-    link(rel="stylesheet", href="")
+    link(rel="stylesheet", href="public/css/product-list.css")
     link(rel="shortcut icon",href="public/images/favicon.ico")
     
 body 
@@ -35,7 +35,7 @@ body
                     li 
                         a(href="news.html") 最新消息
                     li 
-                        a(href="#") 產品類別
+                        a(href="produt-list.html") 產品類別
                         ul.submenu 
                             li 
                                 a(href="#") 紙製品
@@ -48,6 +48,95 @@ body
                     li 
                         a(href="letter-space.html") 寫信空間
     //頁首結尾
+
+    .container
+      .row
+        // 麵包屑
+        .breadcrumb.col-12
+            a(href='index.html') 首頁
+            span  > 
+            a(href='product-list.html') 產品類別
+
+        // 左列表
+        aside.col-12.col-md-3.col-lg-2
+          ul
+              a.btn-primary(href='#') 紙製品
+                ul.product-list-submenu 
+                    li 
+                        a(href="#") 信封
+                    li 
+                        a(href="#") 信紙
+                    li 
+                        a(href="#") 包裝紙
+                    li 
+                        a(href="#") 明信片
+                    li 
+                        a(href="#") 筆記本
+                    li 
+                        a(href="#") 手帳本
+            li
+              a.btn-primary(href='#') 文具
+            li
+              a.btn-primary(href='#') 雜貨
+            li
+              a.btn-primary(href='#') 童玩
+        // 右欄位
+        main.col-12.col-md-9.col-1g-10
+          h2.text-left 作品
+          .row
+            .col-12.col-md-4
+              a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                    img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+                    span.icon-new NEW
+              p.title.text-center
+                a(href='#') 標題1
+              p.date.text-center 20220615
+            .col-12.col-md-4
+              a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                    img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+                    span.icon-new NEW
+              p.title.text-center
+                a(href='#') 標題2
+              p.date.text-center 20220615
+            .col-12.col-md-4
+              a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                    img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+                    span.icon-new NEW
+              p.title.text-center
+                a(href='#') 標題3
+              p.date.text-center 20220615
+            .col-12.col-md-4
+              a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                    img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+              p.title.text-center
+                a(href='#') 標題4
+              p.date.text-center 20220615
+            .col-12.col-md-4
+              a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                    img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+              p.title.text-center
+                a(href='#') 標題3
+              p.date.text-center 20220615
+            .col-12.col-md-4
+              a.img-wrap(href='#')
+                .img-overlay
+                  a.img-wrap(href='#')
+                  .img-overlay
+                    a.img-wrap(href='#')
+                      img.img-fluid.img-rounded(src='https://loremflickr.com/300/200' alt='')
+              p.title.text-center
+                a(href='#') 標題4
+              p.date.text-center 20220615
 
 
     // 頁尾開始
