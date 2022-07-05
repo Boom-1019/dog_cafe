@@ -3,15 +3,19 @@
   position: relative;
 }
 
-form {
-  box-sizing: border-box;
-  width: 400px;
-  height: 500px;
-  background-color: #F4F5C7;
+.form {
   position: absolute;
   top: 50%;
-  left: 55%;
-  transform: translateX(0%) translateY(-50%);
+  transform: translateY(-50%);
+  right: 10%;
+  display: flex;
+  justify-content: end;
+}
+
+form {
+  width: 30%;
+  padding: 10% 10%;
+  background-color: #F4F5C7;
   border-radius: 10px;
   box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -21,13 +25,40 @@ form {
   padding-right: 40px;
 }
 
-form input {
-  padding: 10px;
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+.label {
+  width: 100%;
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+}
+
+.input input {
+  padding: 5px;
   background-color: #ffffff;
   color: black;
   margin-top: 2px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #3d7944;
+  width: 95%;
 }
 
 form a {
@@ -35,8 +66,7 @@ form a {
   text-decoration: underline;
   padding-top: 2px;
   display: block;
-  width: fit-content;
-  margin-left: 80%;
+  margin-bottom: 5px;
 }
 
 .button {
@@ -45,6 +75,9 @@ form a {
   font-size: 16px;
   cursor: pointer;
   border: none;
+  width: 100%;
+  border-radius: 5px;
+  line-height: 40px;
 }
 
 .button:hover {
