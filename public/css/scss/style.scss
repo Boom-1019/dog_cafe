@@ -129,12 +129,14 @@ header{
 
     .logo-wrapper{
         display: flex;
-        justify-content: left;
+        justify-content: space-around;
     }
 
     .logo-wrapper img{
-        max-width: 200px;
+        max-width: 150px;
         margin-right: 20px;
+
+
     }
 
     .logo-wrapper span{
@@ -144,13 +146,14 @@ header{
     header .icon-wrapper{
         display: flex;
         align-items: center;
+        justify-content: flex-start;
 
     }
     
     header .icon-wrapper img{
-    width: 25px;
+    width: 20px;
     padding-left: 0px;
-    padding-right: 25px;
+    padding-right: 10px;
     }
     
     header{
@@ -163,7 +166,7 @@ header{
     display: none;
     z-index: 1;
     left: 0;
-    top: 61px;
+    top: 52px;
     }
 
     nav.active{
@@ -171,26 +174,26 @@ header{
     }
     nav li{
         
-        line-height: 60px;
+        line-height: 40px;
     }
     nav a{
     background-color:$primary-color;
     display: block;
     text-align: center;
-    font-size: 16px;
-    line-height: 50px;
+    font-size: 14px;
+    line-height: 40px;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     }
 
     header{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         border-bottom: 1px solid rgb(200, 200, 200);
     }
     .icon-menu{
         background-color:rgb(61, 121, 68) ;
         border-radius: 3px;
-        padding: 2px;
+        padding: 1px;
         padding-left: 3px;
         padding-right: 3px;
         display: flex;
@@ -199,8 +202,7 @@ header{
         margin-right: 7px;
     }
     .icon-menu img{
-        width: 35px;
-        height: 35px;
+        width: 20px;
     }
     .submenu{
         display: none;
@@ -208,6 +210,102 @@ header{
     .submenu.active{
         display: block;
     }
+
+    
+    //精選品牌//
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+      }
+
+      .brand-recommended {
+        padding-top: 30px;
+        background-color: #FAF6BA;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .brand-recommended img{
+        margin-bottom:20px ;
+    }
+
+    //品牌故事互動//
+    .img-mailbox{
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        left: 5px;
+    }
+    
+
+    .img-grandpa{
+        width: 30%;
+        position: absolute;
+        bottom: 0px;
+        right: 5px;
+    }
+
+    //故事時光//
+    .story-wrapper{
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .story-bg:nth-child(even){
+        margin-top: 80px;
+    }
+    
+    .story-bg{
+        position: relative;
+    }
+    
+    .story-bg>img{
+        margin: 10px;
+    }
+    
+    .story-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+    }
+    
+    .story-text-odd{
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+    }
+    
+    
+    .story-text,.story-text-odd>span{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+ 
+    
+    //*麵包屑樣式*//
+
+.breadcrumb {
+    margin: 0px 0px 20px 0px;
+    color: #999999;
+    width: 100%;
+  }
+  
+  .breadcrumb > a {
+    color: $primary-color;
+    font-size: 8px;
+  }
 }
 
 
@@ -306,6 +404,109 @@ header{
     }
 
 
+    h2 {
+        padding-top: 30px;
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+      }
+      //精選品牌//
+      .brand-recommended {
+        background-color: #FAF6BA;
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    //品牌故事互動區(手繪)//
+    .img-mailbox{
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
+    
+    .img-mailbox:hover{
+        transform: rotate(-5deg);
+    }
+    .img-grandpa{
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+    }
+    
+    .img-grandpa:hover{
+        transform: rotate(8deg);
+    }
+
+
+    //故事時光//
+    .title-img{
+        display: flex;
+        justify-content:center;
+    }
+    .title-img img{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 220px;
+    }
+    .story-wrapper{
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .story-bg:nth-child(even){
+        margin-top: 80px;
+    }
+    
+    .story-bg{
+        position: relative;
+    }
+    
+    .story-bg>img{
+        margin: 10px;
+    }
+    
+    .story-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+    }
+    
+    .story-text-odd{
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+    }
+    
+    
+    .story-text,.story-text-odd>span{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    //*麵包屑樣式*//
+
+    .breadcrumb {
+    margin: 0px 0px 20px 0px;
+    color: #999999;
+    width: 100%;
+    }
+  
+    .breadcrumb > a {
+    color: $primary-color;
+    }
+
 }//大於768px end
 
 
@@ -371,99 +572,14 @@ vertical-align: top;
     position: relative;
 }
 
-.img-mailbox{
-    position: absolute;
-    bottom: 0;
-    left: 100px;
-}
-
-.img-mailbox:hover{
-    transform: rotate(-5deg);
-}
-.img-grandpa{
-    position: absolute;
-    bottom: 0px;
-    right: 100px;
-}
-
-.img-grandpa:hover{
-    transform: rotate(8deg);
-}
 .title-img{
     display: flex;
     justify-content:center;
 }
 .title-img img{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 220px;
-}
-.story-wrapper{
+    margin-bottom: 30px;
     width: 100%;
-    display: flex;
-    overflow: hidden;
 }
-
-.story-bg:nth-child(even){
-    margin-top: 80px;
-}
-
-.story-bg{
-    position: relative;
-}
-
-.story-bg>img{
-    margin: 10px;
-}
-
-.story-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 1px;
-}
-
-.story-text-odd{
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 1px;
-}
-
-
-.story-text,.story-text-odd>span{
-    font-size: 20px;
-    padding-top: 15px;
-}
-
-.brand-recommended {
-    background-color: #FAF6BA;
-    width: 100%;
-    margin-top: 30px;
-    padding-bottom: 40px;
-}
-
-.brand-recommended h2{
-    font-size: 32px;
-    padding-top: 30px;
-    text-align: center;
-}
-
-h2 {
-    padding-top: 30px;
-    font-size: 32px;
-    text-align: center;
-    padding-bottom: 20px;
-    letter-spacing: 1px;
-  }
 
 //footer樣式
 
@@ -477,7 +593,9 @@ footer{
 footer img{
     width: 200px;
 }
-
+dl{
+    padding-bottom: 15px;
+}
 dt{
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -490,19 +608,6 @@ dd a,dd p{
     color: rgb(255, 255, 255);
     margin-bottom: 5px;
 }
-
-
-//*麵包屑樣式*//
-
-.breadcrumb {
-    margin: 0px 0px 20px 0px;
-    color: #999999;
-    width: 100%;
-  }
-  
-  .breadcrumb > a {
-    color: $primary-color;
-  }
 
   
 
@@ -594,33 +699,34 @@ margin-right: 0;
 }
 .loading-overlay{
     position: fixed;
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgb(244, 255, 241);
+    background-color: rgba(246, 254, 243, 0.952);
     z-index: 999;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: .3s all;
+    transition: .5s all;
 }
 
 .loading-overlay.active{
     top: -100vh;
 }
-
+.loading-overlay img{
+    width: 150px;
+    margin-bottom: 15px;
+}
 .spinner {
-width: 11.2px;
-height: 11.2px;
-border-radius: 11.2px;
+width: 8px;
+height: 8px;
+border-radius: 5px;
 box-shadow: 28px 0px 0 0 rgba(18,102,0,0.2), 22.7px 16.5px 0 0 rgba(18,102,0,0.4), 8.68px 26.6px 0 0 rgba(18,102,0,0.6), -8.68px 26.6px 0 0 rgba(18,102,0,0.8), -22.7px 16.5px 0 0 #126600;
 animation: spinner-b87k6z 1.4s infinite linear;
 }
+
 
 @keyframes spinner-b87k6z {
 to {

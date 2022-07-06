@@ -1,3 +1,46 @@
+// 小於等於767 手機
+@media (max-width: 767px){
+    .tab-link>a{
+        line-height: 30px;
+    }
+
+    .bgc-img h2{
+        display: none;
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .bgc-img img{
+        margin-bottom: 20px;
+    }
+    
+}
+
+//視窗大於768px
+@media(min-width:768px){
+    .tab-link>a{
+        line-height: 45px;
+    }
+    .bgc-img h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .bgc-img p{
+        font-size: 24px;}
+
+    .margin50{
+        margin-top: 50px;
+        margin-bottom: 0px;
+     }
+}
+
 .tab-link{
     display: flex;
     flex-direction: row;
@@ -10,12 +53,11 @@
     margin: 2%;
     margin-bottom: 0px;
     display: block;
-    line-height: 45px;
     text-align: center;
     color: rgb(255, 255, 255);
     background-color:#328A3D ;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
 }
 
 .tab-link>a.active{
@@ -52,25 +94,14 @@
 
 }
 
-h3{
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
 
-.margin50{
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
+
 .bgc-img h2{
     padding-top: 20px;
-    font-size: 32px;
     text-align: center;
-
 }
 
 .bgc-img p{
-    font-size: 24px;
     margin-bottom: 20px;
     text-align: justify;
     

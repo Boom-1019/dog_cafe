@@ -1,25 +1,51 @@
-h2 {
-  font-size: 32px;
-  text-align: center;
-  letter-spacing: 1px;
-}
+@media (max-width: 767px) {
+  h2 {
+    display: none;
+  }
 
-.naruto p {
-  margin-bottom: 20px;
-  font-size: 24px;
-  letter-spacing: 1px;
-  line-height: 150%;
-}
+  .title-img {
+    margin: 0;
+  }
 
-.box-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+  .naruto p {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    text-align: justify;
+  }
 
-.about-us {
-  background-image: url(../images/bg01.png), url(../images/bg02.png);
-  background-repeat: no-repeat;
-  background-position: 0% 5%, right bottom;
-  padding-bottom: 40px;
+  .naruto {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .title-img img {
+    display: none;
+  }
+
+  .naruto p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 150%;
+  }
+
+  .box-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-us {
+    background-image: url(../images/bg01.png), url(../images/bg02.png);
+    background-repeat: no-repeat;
+    background-position: 0% 5%, right bottom;
+  }
 }

@@ -1,3 +1,4 @@
+//----------FAQ切換-----------//
 $('.tab-link>a').on('click',function(e){
     e.preventDefault()
     $(this).addClass('active')
@@ -14,38 +15,13 @@ $('.question-content').on('click', function(){
 
 })//.question-content end
 
-// 捲軸事件
-
-// 定義捲軸高變數
-let offsetTop
-let product1Top = $('.product-section-1').offset().top 
-$(window).scroll(function(){
-    offsetTop = $(window).scrollTop()
-    //console.log( '捲軸高', offsetTop )
-    // console.log('product1',product1Top)
-//    if( offsetTop >=  product1Top){
-//         console.log('test')
-//    }
 
 
-    // 捲軸高度>=500，會出現page-top的按鈕
-    if( offsetTop >= 500){
-        $('.page-top').addClass('active')
-    }else{
-        $('.page-top').removeClass('active')
-    }
-})//scroll end
 
 // 點按page-top回到最上方
 $('.page-top').on('click', function(){
     $('html, body').animate({ scrollTop: 0 })
 })//.page-top
-
-
-// $(window).scroll(function(){
-    
-// }) // scroll end
-
 
 
 // new WOW().init()
