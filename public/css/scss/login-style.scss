@@ -1,41 +1,95 @@
+
 .login{
     width: 100%;
     position: relative;
-    // background-image: url(../images/login.png);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-position: center;
-}
-.form{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10%;
-    display: flex;
-    justify-content: end;
-}
-form{
-    width: 30%;
-    padding: 10% 10%;
-    background-color: #F4F5C7;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    
 }
 
-.input-group{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
+// 小於等於767 手機
 @media (max-width:767px){
+    .login{
+        background-image: url(../images/bg05.png);
+        background-repeat: repeat;
+    }
+    .login img{
+        display: none;
+    }
+    .label{
+        width: 100%;
+        text-align: left;
+    }
+    .input input {
+        padding: 5px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        margin-top: 2px;
+        border-radius: 5px;
+        border: 2px solid #3d7944;
+        width:95%;
+      }
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 60%;
+    }
+    form a{
+        color: black;
+        text-decoration: underline;
+        padding-top: 2px;
+        display: block;
+        // width: fit-content;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .button{
+        background-color: #3d7944;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        line-height: 40px;
+        
+    }
+}
+
+
+//視窗大於768px
+@media(min-width:768px){
+    .form{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10%;
+        display: flex;
+        justify-content: end;
+    }
+    form{
+        width: 30%;
+        padding: 3% 3%;
+        background-color: #F4F5C7;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    }
+    
+    .input-group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    
     .label{
         width: 100%;
         text-align: left;
@@ -43,46 +97,42 @@ form{
     .input{
         width: 100%;
     }
-}
-.label{
-    width: 100%;
-    text-align: left;
-}
-.input{
-    width: 100%;
-}
-
-.input input {
-    padding: 5px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    margin-top: 2px;
-    border-radius: 5px;
-    border: 2px solid #3d7944;
-    width:95%;
-  }
-
-form a{
-    color: black;
-    text-decoration: underline;
-    padding-top: 2px;
-    display: block;
-    // width: fit-content;
-    margin-bottom: 5px;
-}
-.button{
-    background-color: #3d7944;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    border-radius: 5px;
-    line-height: 40px;
     
-}
+    .input input {
+        padding: 5px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        margin-top: 2px;
+        border-radius: 5px;
+        border: 2px solid #3d7944;
+        width:95%;
+      }
+    
+    form a{
+        color: black;
+        text-decoration: underline;
+        padding-top: 2px;
+        display: block;
+        // width: fit-content;
+        margin-bottom: 5px;
+        text-align: right;
 
-.button:hover{
-    background-color: #3d7944c8;
-
+    }
+    .submit .button{
+        background-color: #3d7944;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        line-height: 40px;
+        
+    }
+    
+    .button:hover{
+        background-color: #3d7944c8;
+    
+    }
+    
 }

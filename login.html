@@ -47,9 +47,10 @@
       <div class="login"> <img class="img-fluid" src="public/images/login.png" alt="">
         <div class="form col-12">
           <form action="dashbord.html" method="POST">
+            <h2>會員登入</h2>
             <div class="input-group">
               <div class="label">
-                <label>電子郵件</label>
+                <label type="email">電子郵件</label>
               </div>
               <div class="input">
                 <input type="email">
@@ -57,13 +58,15 @@
             </div>
             <div class="input-group">
               <div class="label">
-                <label>密碼</label>
+                <label type="password">密碼</label>
               </div>
               <div class="input">
                 <input type="password"><a class="text-right" href="#">忘記密碼 </a>
               </div>
-              <input class="button" type="submit" value="登入">
-            </div><a class="text-right" href="#">註冊會員  </a>
+            </div>
+            <div class="submit">
+              <input class="button" type="submit" value="登入"><a class="text-right" href="#">註冊會員  </a>
+            </div>
           </form>
         </div>
       </div>

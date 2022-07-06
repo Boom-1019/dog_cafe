@@ -63,20 +63,21 @@ body
             img.img-fluid(src="public/images/login.png", alt="")
             .form.col-12
                 form(action='dashbord.html' method='POST')
+                    h2 會員登入
                     .input-group
                         .label
-                            label 電子郵件
+                            label(type='email') 電子郵件
                         .input
                             input(type='email')
                     .input-group
                         .label
-                            label 密碼
+                            label(type='password') 密碼
                         .input
                             input(type='password')
                             a.text-right(href="#") 忘記密碼 
-                    
+                    .submit
                         input.button(type='submit' value='登入')
-                    a.text-right(href="#") 註冊會員  
+                        a.text-right(href="#") 註冊會員  
 
             
     // 頁尾開始
