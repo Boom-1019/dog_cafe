@@ -9,6 +9,8 @@ head
     link(rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css")
   
 body 
+    .loading-overlay
+        .spinner
     //頁首開始
     header 
         .row
@@ -56,13 +58,14 @@ body
         #banner
             .banner-parent
                 .banner-child
-                    img.img-fluid(src='public/images/banner01.png' alt='故事時光|2022 手帳展')
-                    img.img-fluid(src='public/images/banner02.png' alt='南國的孩子 紙膠帶|NEW IN!')
+                    img(src='public/images/banner01.png' alt='故事時光|2022 手帳展')
+                    img(src='public/images/banner02.png' alt='南國的孩子 紙膠帶|NEW IN!')
                 .left-arrow 
                     img(src="public/images/left-arrow.png", alt="")
                 .right-arrow 
                     img(src="public/images/right-arrow.png", alt="")
-    
+                ol.indicator
+                    li.active
     main.img-floor.product-section-1
             .container
                 .img-store
