@@ -18,6 +18,10 @@
   .naruto {
     margin-bottom: 20px;
   }
+
+  .title-img {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   h2 {

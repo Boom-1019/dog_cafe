@@ -51,31 +51,12 @@ aside > ul > li:hover .product-list-submenu {
   border-radius: 5px;
 }
 
-img-wrap {
-  transform: scale(1.5);
-}
-
 .product-img {
   margin: auto;
   width: 80%;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
-}
-
-.shop-cart {
-  display: block;
-  width: 80%;
-  padding: 5px;
-  font-size: 18px;
-  color: white;
-  background-color: #328a3ed3;
-  border-radius: 5px;
-  margin-top: 10px;
-  position: absolute;
-  bottom: 10px;
-  left: 7.5%;
-  display: none;
 }
 
 .product-img:hover .shop-cart {
@@ -88,7 +69,6 @@ img-wrap {
 
 .product-title {
   font-weight: 600;
-  font-size: 20px;
   display: block;
   color: black;
   margin: 5px auto;
@@ -101,4 +81,48 @@ img-wrap {
 .product-bg {
   background-image: url(../images/bg05.png);
   background-repeat: repeat;
+}
+
+@media (max-width: 767px) {
+  .product-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-cart {
+    display: block;
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #328a3ed3;
+    border-radius: 5px;
+    margin-top: 10px;
+    left: 7.5%;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .shop-cart {
+    display: block;
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: #328a3ed3;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 7.5%;
+    display: none;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
 }

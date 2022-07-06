@@ -56,10 +56,6 @@ aside>ul>li:hover .product-list-submenu{
     border-radius: 5px;
 }
 
-img-wrap{
-    transform: scale(1.5);
-}
-
 .product-img {
     margin: auto;
     width: 80%;
@@ -69,21 +65,7 @@ img-wrap{
 
 }
 
-.shop-cart{
-    display: block;
-    width: 80%;
-    padding: 5px;
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    background-color: #328a3ed3;
-    border-radius: 5px;
-    margin-top: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 7.5%;
-    display: none;
 
-}
 .product-img:hover .shop-cart{
     display: block;
 }
@@ -93,7 +75,7 @@ img-wrap{
 }
 .product-title{
     font-weight: 600;
-    font-size: 20px;
+    
     display: block;
     color: black;
     margin: 5px auto;
@@ -103,8 +85,52 @@ img-wrap{
 }
 
 .product-bg{
-    
     background-image: url(../images/bg05.png);
     background-repeat: repeat;
 }
 
+// 小於等於767 手機
+@media (max-width: 767px){
+    .product-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop-cart{
+        display: block;
+        width: 90%;
+        padding: 5px;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        background-color: #328a3ed3;
+        border-radius: 5px;
+        margin-top: 10px;
+        left: 7.5%;
+    }
+    .product-title{
+        font-size: 16px;
+    }
+}
+
+
+//視窗大於768px
+@media(min-width:768px){
+    .shop-cart{
+        display: block;
+        width: 80%;
+        padding: 5px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        background-color: #328a3ed3;
+        border-radius: 5px;
+        margin-top: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 7.5%;
+        display: none;
+    }
+
+    .product-title{
+        font-size: 20px;
+    }
+}

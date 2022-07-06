@@ -14,8 +14,13 @@
         margin-bottom: 5px;
     }
     .bgc-img img{
-        margin-bottom: 20px;
+        margin: 10px 0;
+        width: 125%;
     }
+    .margin50{
+        margin-top: 20px;
+        margin-bottom: 0px;
+     }
     
 }
 
@@ -27,6 +32,10 @@
     .bgc-img h2{
         font-size: 32px;
     }
+    .bgc-img .title-img{
+        display: none;
+    }
+
     h3{
         font-size: 28px;
         font-weight: 600;

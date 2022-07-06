@@ -126,7 +126,6 @@ header{
 // 小於等於767 手機
 @media (max-width: 767px){
     
-
     .logo-wrapper{
         display: flex;
         justify-content: space-around;
@@ -225,9 +224,11 @@ header{
         background-color: #FAF6BA;
         width: 100%;
         padding-bottom: 20px;
+        
     }
     .brand-recommended img{
         margin-bottom:20px ;
+        
     }
 
     //品牌故事互動//
