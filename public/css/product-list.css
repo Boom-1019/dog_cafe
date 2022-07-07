@@ -103,7 +103,7 @@ aside > ul > li:hover .product-list-submenu {
   }
 
   .product-title {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) {
