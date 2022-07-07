@@ -113,9 +113,21 @@ setInterval(function () {
   $('.right-arrow').click();
 }, 3000); //---------故事時光 輪播-------//
 
-$('.story-wrapper').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1000
-});
+if ($(window).width() < 767) {
+  $('.story-wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
+  }); // JavaScript here 
+  // 當視窗寬度小於767px時執行
+} else {
+  // JavaScript here
+  // 當視窗寬度不小於767px時執行
+  $('.story-wrapper').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000
+  });
+}

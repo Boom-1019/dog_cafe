@@ -25,7 +25,7 @@
         </ul>
       </div><a class="icon-menu display-md-none" id="btn-nav-switch" href="javascript:;"><img src="public/images/menu.png" alt=""></a>
       <nav> 
-        <ul class="container"> 
+        <ul class="container-nav">
           <li> <a href="about-us.html">關於我們</a></li>
           <li> <a href="news.html">最新消息</a></li>
           <li> <a href="javascrip:;">產品類別</a>
@@ -94,23 +94,19 @@
               <div class="product-wrapper">
                 <h2 class="text-left">OURS森林好朋友｜貼紙包 </h2>
                 <h2 class="text-left">NT $270</h2>
-                <div class="selector-wrapper"> 
-                  <label>樣式</label>
-                  <fieldest name="樣式"></fieldest>
-                  <input type="radio" name="樣式" checked="checked">
-                  <label>晚安小鎮</label>
-                  <input type="radio" name="樣式" checked="checked">
-                  <label>午後的白日夢</label>
-                  <input type="radio" name="樣式" checked="checked">
-                  <label>花屋的門窗</label>
-                </div>
+                <p>樣式</p>
+                <select name="style"> 
+                  <option value="晚安小鎮">晚安小鎮</option>
+                  <option value="花屋的門廳">花屋的門廳</option>
+                  <option value="午後的白日夢">午後的白日夢</option>
+                </select>
                 <div class="number">
-                  <label>數量</label>
-                  <quantity-input class="quantity">
-                    <button>-</button>
-                    <input type="number" min="1">
-                    <button>+</button>
-                  </quantity-input>
+                  <p>數量</p>
+                  <div class="quantity">
+                    <input type="submit" onclick="numRed()" value="-">
+                    <text readonly id="number">0</text>
+                    <input type="submit" onclick="numAdd()" value="+">
+                  </div>
                 </div>
                 <div class="shop-btn"> 
                   <button type="submit" name="add">加入購物車</button>
@@ -179,4 +175,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="public/js/WOW-master/dist/wow.min.js"></script>
   <script src="public/js/fqa-script.js"> </script>
+  <script src="public/js/product.js"> </script>
 </body>

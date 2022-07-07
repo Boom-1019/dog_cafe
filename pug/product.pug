@@ -9,6 +9,8 @@ head
     link(rel="stylesheet", href="public/css/product-list.css")
     link(rel="stylesheet", href="public/css/product.css")
     link(rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css")
+    //- link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous")
+
 
 body 
     //頁首開始
@@ -35,7 +37,7 @@ body
                 img(src="public/images/menu.png", alt="")
             
             nav 
-                ul.container 
+                ul.container-nav
                     li 
                         a(href="about-us.html") 關於我們
                     li 
@@ -127,21 +129,18 @@ body
                     .product-wrapper
                         h2.text-left OURS森林好朋友｜貼紙包 
                         h2.text-left NT $270
-                        .selector-wrapper 
-                            label 樣式
-                            fieldest(name='樣式')
-                            input(type='radio' name='樣式' checked='checked')
-                            label 晚安小鎮
-                            input(type='radio' name='樣式' checked='checked')
-                            label 午後的白日夢
-                            input(type='radio' name='樣式' checked='checked')
-                            label 花屋的門窗
+                        p 樣式
+                        select(name="style") 
+                            option(value='晚安小鎮') 晚安小鎮
+                            option(value='花屋的門廳') 花屋的門廳
+                            option(value='午後的白日夢') 午後的白日夢
+
                         .number
-                            label 數量
-                            quantity-input.quantity
-                                button -
-                                input(type='number' min='1')
-                                button +
+                            p 數量
+                            .quantity
+                                input(type="submit" onclick="numRed()" value="-") 
+                                text(readonly id='number') 0
+                                input(type="submit" onclick="numAdd()" value="+") 
                         .shop-btn 
                             button(type='submit' name='add') 加入購物車
 
@@ -200,3 +199,4 @@ body
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
     script(src="public/js/WOW-master/dist/wow.min.js")
     script(src="public/js/fqa-script.js") 
+    script(src="public/js/product.js") 

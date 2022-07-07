@@ -22,12 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  max-width: 1140px;
-}
-
 .img-rounded {
   /*圓角*/
   border-radius: 5px;
@@ -419,6 +413,11 @@ header {
 }
 
 @media (max-width: 767px) {
+  .container-nav {
+    margin: auto;
+    max-width: 1140px;
+  }
+
   .logo-wrapper {
     display: flex;
     justify-content: space-around;
@@ -537,51 +536,6 @@ header {
     right: 5px;
   }
 
-  .story-wrapper {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-  }
-
-  .story-bg:nth-child(even) {
-    margin-top: 80px;
-  }
-
-  .story-bg {
-    position: relative;
-  }
-
-  .story-bg > img {
-    margin: 10px;
-  }
-
-  .story-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 1px;
-  }
-
-  .story-text-odd {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 1px;
-  }
-
-  .story-text, .story-text-odd > span {
-    font-size: 20px;
-    padding-top: 15px;
-  }
-
   .breadcrumb {
     margin: 0px 0px 20px 0px;
     color: #999999;
@@ -592,8 +546,46 @@ header {
     color: #3d7944;
     font-size: 8px;
   }
+
+  .story-wrapper {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .story-bg {
+    position: relative;
+  }
+
+  .story-bg > img {
+    margin: 0px;
+  }
+
+  .story-text {
+    position: absolute;
+    top: 53%;
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+
+  .story-text > p {
+    font-size: 0.9em;
+    padding-top: 0px;
+  }
 }
 @media (min-width: 768px) {
+  .container-nav {
+    width: 90%;
+    margin: auto;
+    max-width: 1140px;
+  }
+
   .logo-wrapper {
     display: flex;
     justify-content: space-between;
@@ -759,7 +751,7 @@ header {
     line-height: 25px;
   }
 
-  .story-text, .story-text-odd > span {
+  .story-text > p {
     font-size: 1em;
     padding-top: 15px;
   }
@@ -774,6 +766,12 @@ header {
     color: #3d7944;
   }
 }
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1140px;
+}
+
 .img-wrap {
   display: block;
   position: relative;

@@ -23,11 +23,7 @@ body{
     overflow-x: hidden;
 }
 
-.container{
-    width: 90%;
-    margin: auto;
-    max-width: 1140px;
-}
+
 
 //圖片相關//
 .img-rounded{
@@ -125,7 +121,12 @@ header{
 }
 // 小於等於767 手機
 @media (max-width: 767px){
-    
+    .container-nav{
+        // width: 90%;
+        margin: auto;
+        max-width: 1140px;
+    }
+
     .logo-wrapper{
         display: flex;
         justify-content: space-around;
@@ -169,7 +170,8 @@ header{
     }
 
     nav.active{
-        display: block;
+        display: block; 
+        
     }
     nav li{
         
@@ -247,53 +249,7 @@ header{
         right: 5px;
     }
 
-    //故事時光//
-    .story-wrapper{
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-    }
     
-    .story-bg:nth-child(even){
-        margin-top: 80px;
-    }
-    
-    .story-bg{
-        position: relative;
-    }
-    
-    .story-bg>img{
-        margin: 10px;
-    }
-    
-    .story-text{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 380px;
-        display: flex;
-        flex-direction: column;
-        letter-spacing: 1px;
-    }
-    
-    .story-text-odd{
-        position: absolute;
-        top: 42%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 380px;
-        display: flex;
-        flex-direction: column;
-        letter-spacing: 1px;
-    }
-    
-    
-    .story-text,.story-text-odd>span{
-        font-size: 20px;
-        padding-top: 15px;
-    }
- 
     
     //*麵包屑樣式*//
 
@@ -307,11 +263,49 @@ header{
     color: $primary-color;
     font-size: 8px;
   }
+
+// -----故事時光
+  .story-wrapper{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.story-bg{
+    position: relative;
+}
+
+.story-bg>img{
+    margin: 0px;
+}
+
+.story-text{
+    position: absolute;
+    top: 53%;
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+.story-text>p{
+    font-size: 0.9em;
+    padding-top: 0px;
+}
 }
 
 
 //視窗大於768px
 @media(min-width:768px){
+    .container-nav{
+        width: 90%;
+        margin: auto;
+        max-width: 1140px;
+    }
+
     .logo-wrapper{
         display: flex;
         justify-content: space-between;
@@ -480,26 +474,30 @@ header{
         line-height: 25px;
     }
     
-    .story-text,.story-text-odd>span{
+    .story-text>p{
         font-size: 1em;
         padding-top: 15px;
     }
 
     //*麵包屑樣式*//
 
-    .breadcrumb {
-    margin: 0px 0px 20px 0px;
-    color: #999999;
-    width: 100%;
-    }
-  
-    .breadcrumb > a {
-    color: $primary-color;
-    }
+        .breadcrumb {
+        margin: 0px 0px 20px 0px;
+        color: #999999;
+        width: 100%;
+        }
+    
+        .breadcrumb > a {
+        color: $primary-color;
+        }
 
 }//大於768px end
 
-
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1140px;
+}
 .img-wrap{
     display: block;
     position: relative;
