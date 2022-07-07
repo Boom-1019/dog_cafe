@@ -217,3 +217,17 @@ $(window).resize(function(){
         })// nav>ul>li end
     }// windowWidth>=768 end
 })// window resize end
+
+
+
+//-----商品頁小圖換大圖-------//
+$('.thumbnails>img').on('click', function(e){
+    $('.main-img>img').attr('src',$(this).attr('src'))
+    //大圖的src屬性路徑與點擊的縮圖的src屬性路徑交換//
+
+    $('#product-description').text( $(this).attr('alt') )
+    // html():包含標籤  text():純文字 val():表單值
+
+    $(this).addClass('active')
+    $(this).siblings().removeClass('active')
+})//thumbnails>img end
