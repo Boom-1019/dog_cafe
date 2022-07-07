@@ -7,7 +7,11 @@ head
     link(rel='stylesheet' href='public/css/style.css')
     link(rel="shortcut icon",href="public/images/favicon.ico")
     link(rel="stylesheet" href="public/js/WOW-master/css/libs/animate.css")
-  
+        //- <!-- slick css -->
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+    //- <!-- slick theme css -->
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+
 body 
     .loading-overlay
         img(src="public/images/logo01.png", alt="")
@@ -74,7 +78,7 @@ body
                     a(href="#") 
                         img.img-fluid(src="public/images/store.png", alt="綠。文具坊|產品類別")
                     .img-mailbox
-                        a(href="#") 
+                        a(href="letter-space.html") 
                             img.animated.wow.bounceInLeft.img-fluid(src="public/images/mailbox.png", alt="綠。文具坊|寫信空間")
                     .img-grandpa
                         a(href="about-us.html") 
@@ -83,41 +87,49 @@ body
     section
         .container
             h2 ･✐･　故事時光　･✐･
-        .story-dad
-            .story-wrapper
-                .story-bg
-                    img(src="public/images/storybg01.png", alt="")
-                    .story-text-odd
-                        span To 每個人
-                        span 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
-                        span.text-right Hebe
-                .story-bg
-                    img(src="public/images/storybg02.png", alt="")
-                    .story-text
-                        span To 夏天出生的小盒
-                        br
-                        span 陽光很盛，但總有適時的微風；夏夜很暗，但總有點點螢火；冰糕很涼，但總有絲絲的香甜；蟬鳴有力，但總有心安的聲音。我覺得他們全都很有趣，也全都很像你，願你可以像夏天一樣精彩熱烈，繼續滿懷期待的迎接每一個夏天。
-                        span.text-right MJQ
-                .story-bg
-                    img(src="public/images/storybg01.png", alt="")
-                    .story-text-odd
-                        span To 每個人
-                        span 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
-                        span.text-right Hebe
-                .story-bg
-                    img(src="public/images/storybg02.png", alt="")
-                    .story-text
-                        span To 夏天出生的小盒
-                        br
-                        span 陽光很盛，但總有適時的微風；夏夜很暗，但總有點點螢火；冰糕很涼，但總有絲絲的香甜；蟬鳴有力，但總有心安的聲音。我覺得他們全都很有趣，也全都很像你，願你可以像夏天一樣精彩熱烈，繼續滿懷期待的迎接每一個夏天。
-                        span.text-right MJQ
-                .story-bg
-                    img(src="public/images/storybg01.png", alt="")
-                    .story-text
-                        span To 每個人
-                        br
-                        span 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
-                        span.text-right Hebe
+        .story-wrapper
+            .story-bg
+                img.img-fluid(src="public/images/storybg01.png", alt="")
+                .story-text.img-fluid
+                    p To 每個人
+                    
+                    p 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
+                    p.text-right Hebe
+            .story-bg
+                img.img-fluid(src="public/images/storybg02.png", alt="")
+                .story-text.img-fluid
+                    p To 夏天出生的小盒
+                    
+                    p 陽光很盛，但總有適時的微風；夏夜很暗，但總有點點螢火；冰糕很涼，但總有絲絲的香甜；蟬鳴有力，但總有心安的聲音。我覺得他們全都很有趣，也全都很像你，願你可以像夏天一樣精彩熱烈，繼續滿懷期待的迎接每一個夏天。
+                    p.text-right MJQ
+            .story-bg
+                img.img-fluid(src="public/images/storybg01.png", alt="")
+                .story-text.img-fluid
+                    p To 每個人
+                    
+                    p 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
+                    p.text-right Hebe
+            .story-bg
+                img.img-fluid(src="public/images/storybg02.png", alt="")
+                .story-text.img-fluid
+                    p To 夏天出生的小盒
+                    
+                    p 陽光很盛，但總有適時的微風；夏夜很暗，但總有點點螢火；冰糕很涼，但總有絲絲的香甜；蟬鳴有力，但總有心安的聲音。我覺得他們全都很有趣，也全都很像你，願你可以像夏天一樣精彩熱烈，繼續滿懷期待的迎接每一個夏天。
+                    p.text-right MJQ
+            .story-bg
+                img.img-fluid(src="public/images/storybg01.png", alt="")
+                .story-text.img-fluid
+                    p To 每個人
+                    
+                    p 麥克風是我的樹洞，讓我把無人知曉、不能說的心事，唱進歌裡，得以傾吐，在這個不容易的世代，我要祝福每一個人，希望你們找到屬於你們的樹洞，身心安適、一切安好。
+                    p.text-right Hebe
+            .story-bg
+                img.img-fluid(src="public/images/storybg02.png", alt="")
+                .story-text.img-fluid
+                    p To 夏天出生的小盒
+                    
+                    p 陽光很盛，但總有適時的微風；夏夜很暗，但總有點點螢火；冰糕很涼，但總有絲絲的香甜；蟬鳴有力，但總有心安的聲音。我覺得他們全都很有趣，也全都很像你，願你可以像夏天一樣精彩熱烈，繼續滿懷期待的迎接每一個夏天。
+                    p.text-right MJQ
 
         section.brand-recommended 
             .container 
@@ -173,4 +185,6 @@ body
     script(src="https://code.jquery.com/jquery-3.6.0.min.js",integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=",crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
     script(src="public/js/WOW-master/dist/wow.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    script(src="public/js/index.js") 
     script(src="public/js/fqa-script.js") 
