@@ -42,7 +42,6 @@ textarea{
     
 }
 
-
 // 小於等於767 手機
 @media (max-width: 767px){
     h2{
@@ -54,14 +53,24 @@ textarea{
     input[type=text]{
         width: 80%; 
     }
-
+    
     textarea{
         width: 80%;
     }
+    p{
+        padding: 0 35px 0 35px;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+    
 }
 
 //視窗大於768px
 @media(min-width:768px){
+    p{
+        text-align: center;
+        padding-bottom: 20px;
+    }
     form .title-img{
         display: none;
     }
