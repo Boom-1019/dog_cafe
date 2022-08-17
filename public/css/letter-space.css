@@ -56,14 +56,14 @@ textarea {
     width: 80%;
   }
 
-  p {
+  .form p {
     padding: 0 35px 0 35px;
     margin-bottom: 10px;
     line-height: 25px;
   }
 }
 @media (min-width: 768px) {
-  p {
+  .form p {
     text-align: center;
     padding-bottom: 20px;
   }
