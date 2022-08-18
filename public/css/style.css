@@ -772,6 +772,11 @@ header {
   max-width: 1140px;
 }
 
+.maxwidth1440 {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .img-wrap {
   display: block;
   position: relative;
